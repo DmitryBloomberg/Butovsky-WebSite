@@ -1,0 +1,169 @@
+
+
+.payment-wizard-container {
+  background: #18181b;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.progress-dot.active {
+  background: #2563eb;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+}
+
+.wizard-step h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.wizard-step p {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Стили для ввода суммы */
+.amount-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 24px;
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  outline: none;
+}
+
+.amount-input:focus {
+  border-color: #2563eb;
+}
+
+/* Карточка с телефоном */
+.phone-card {
+  background: #27272a;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.phone-card i {
+  font-size: 24px;
+  color: #2563eb;
+}
+
+.phone-card span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.phone-card small {
+  color: #888;
+}
+
+/* Загрузка файла */
+.file-upload {
+  display: block;
+  padding: 20px;
+  border: 2px dashed #3f3f46;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #aaa;
+}
+
+.file-upload:hover {
+  border-color: #2563eb;
+  color: white;
+}
+
+.file-upload i {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Список итогов */
+.summary-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  background: #27272a;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.summary-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #3f3f46;
+  color: #ddd;
+}
+
+.summary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Кнопка Далее */
+.next-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.next-btn:active {
+  transform: scale(0.98);
+}
+
+/* Анимация успеха */
+.success-step i {
+  font-size: 64px;
+  color: #4ade80;
+  margin-bottom: 20px;
+}
+
+.bx-tada {
+  animation: tada 1s ease infinite;
+}
+
+@keyframes tada {
+  0% { transform: scale(1); }
+  10%, 20% { transform: scale(0.9) rotate(-3deg); }
+  30%, 50%, 70%, 90% { transform: scale(1.1) rotate(3deg); }
+  40%, 60%, 80% { transform: scale(1.1) rotate(-3deg); }
+  100% { transform: scale(1); }
+}

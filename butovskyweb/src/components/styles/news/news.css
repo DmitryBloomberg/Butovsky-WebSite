@@ -1,13 +1,48 @@
-.login-container {
+.news-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 70vh;
   background-color: #000000;
 }
 
-.login-title {
+.news-container i {
+  color: rgb(184, 29, 29);
+  font-size: 40px;
+  margin: 10px 0px;
+}
+
+.news-container h1 {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.news-container h3 {
+  color: rgb(206, 205, 205);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.news-container button {
+  width: 30%;
+  height: 25px;
+  color: rgb(237, 237, 237);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 10px 0px;
+  border: none;
+  background-color: #1d33b1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.news-title {
   text-align: center;
   color: #fefefe;
   margin-bottom: 30px;
@@ -15,76 +50,8 @@
   font-weight: 600;
 }
 
-.login-form {
-  width: 100%;
-  max-width: 400px;
-}
 
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 8px;
-  color: #d0cfcf;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 12px 15px;
-  border: 2px solid #201f1f;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: border-color 0.3s ease;
-  box-sizing: border-box;
-  color: white;
-  background-color: #111111;
-}
-
-.form-group input:focus {
-  outline: none;
-  border-color: #171817;
-}
-
-.login-button {
-  width: 100%;
-  padding: 14px;
-  background-color: #2c41b8;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-}
-
-.login-button:hover {
-  background-color: #243584;
-}
-
-.login-link {
-  text-align: center;
-  margin-top: 20px;
-  color: #e4e4e4;
-  font-size: 14px;
-}
-
-.login-link a {
-  color: #2e6ba1;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.login-link a:hover {
-  text-decoration: underline;
-}
-
-.login-Head {
+.news-Head {
   width: 100%;
   height: 60px;
   border: none;
@@ -96,34 +63,18 @@
   display: flex;
   padding: 0 20px;
   transition: all 0.3s ease;
-  transform: translateY(-20px);
-  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Сама анимация выезда снизу */
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(-60px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.login-Head:hover {
+.news-Head:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 
               0 3px 10px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
 }
 
-
-
-.login-Head h1 {
+.news-Head h1 {
   color: #ffffff;
   font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
   margin: 0px 10px;
   cursor: pointer;
@@ -132,14 +83,14 @@
   transition: all 0.3s ease;
 }
 
-.login-Head h1:hover {
+.news-Head h1:hover {
   color: #1d369c;
   transform: scale(1.05);
 }
 
-.login-Head-mini {
+.news-Head-mini {
   width: auto;
-  height: 60%;
+  height: 70%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -147,26 +98,26 @@
   gap: 15px;
 }
 
-.login-Head-mini h3 {
+.news-Head-mini h3 {
   color: #b1b1b1;
   font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   font-size: 14px;
   margin: 0;
   cursor: pointer;
-  padding: 10px 0px;
+  padding: 10px 8px;
   border-radius: 8px;
   transition: all 0.3s ease;
   position: relative;
 }
 
-.login-Head-mini h3:hover {
+.news-Head-mini h3:hover {
   color: #8b92a3;
   background: rgba(17, 29, 169, 0.1);
   transform: translateY(-1px);
 }
 
-.login-Head-mini h3::after {
+.news-Head-mini h3::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -178,6 +129,21 @@
   transform: translateX(-50%);
 }
 
-.login-Head-mini h3:hover::after {
+.news-Head-mini h3:hover::after {
   width: 80%;
+}
+
+.Back_news {
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+}
+.Back_news i {
+  color: white;
+  font-size: 30px;
+  margin: 16px;
+  cursor: pointer;
 }
