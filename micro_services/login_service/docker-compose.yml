@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: butovsky-server
+    ports:
+      - "5000:5000" # Пробрасываем порт 5000 из контейнера на хост
+    environment:
+      - DB_HOST=host.docker.internal # Специальное имя для доступа к БД на хосте
+      - DB_PORT=6432
+      - DB_NAME=Butovsky
+      - DB_USER=postgres # Замени на реального пользователя БД
+      - DB_PASSWORD=Dima0807 # Замени на реальный пароль БД
+      - PORT=5000
+    restart: unless-stopped
