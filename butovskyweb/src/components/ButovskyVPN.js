@@ -28,7 +28,7 @@ function ButovskyVPN() {
     },
     {
       id: 3,
-      name: 'VERIFIED',
+      name: 'T.O.P',
       duration: '12 месяцев',
       price: 1200,
       priceDisplay: '1200₽',

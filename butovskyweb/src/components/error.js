@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './styles/news/news.css';
 import './styles/news/news-body.css';
+import { useNavigate } from 'react-router-dom';
 
 function Error() {
+  const navigate = useNavigate();
 
   return (
     <div className="news-container">
@@ -15,7 +17,7 @@ function Error() {
         </div>
       </div>
       <div className='Back_news'>
-        <i class='bx bx-arrow-back'></i>
+        <i class='bx bx-arrow-back' onClick={() => navigate('/dashboard')}></i>
       </div>
       <div className='news-container'>
         <i class='bx bxs-error'></i>
